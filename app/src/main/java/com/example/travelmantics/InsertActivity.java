@@ -56,6 +56,7 @@ public class InsertActivity extends AppCompatActivity {
         String price = txtPrice.getText().toString();
         String description = txtDescription.getText().toString();
         TravelDeal deal = new TravelDeal(title, description, price, "");
+        // Actual code that updates firebase
         mDatabaseReference.push().setValue(deal);
     }
 
